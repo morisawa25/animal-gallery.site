@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.top__bg {
+  background-image: url(../video/top-video-still.jpg);
+}
+
+.tabs__content section {
+  display: block;
+}
+
+.animated {
+  opacity: 1;
+}
