@@ -172,7 +172,7 @@ $('.d-inline-block').magnificPopup({
 // モバイルブラウザでは静止画を表示し、それ以外では動画を表示
 if (isMobile) {
   $('.top__bg').css({
-    'background-image': 'url(video/top-video-still.jpg)',
+    'background-image': 'url(https://morisawa25.github.io/animal-gallery.site/top-video-still.jpg)',
   });
 } else {
   $('.top__video').css({ display: 'block' });
