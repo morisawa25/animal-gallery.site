@@ -160,7 +160,7 @@ body {
   padding-top: 82px;
   padding-bottom: 92px;
 
-  background: url(../img/puppies-bg-large.png), url(../img/puppies-bg-small.png),
+  background: url(..https://morisawa25.github.io/animal-gallery.site/thumbnail/puppies-bg-large.png), url(..https://morisawa25.github.io/animal-gallery.site/thumbnail/puppies-bg-small.png),
     #f0faf2;
 }
 
@@ -189,7 +189,7 @@ body {
   padding-bottom: 92px;
 
   /* 上から重ねる順に背景を指定 */
-  background: url(../img/kittens-bg-large.png), url(../img/kittens-bg-small.png),
+  background: url(..https://morisawa25.github.io/animal-gallery.site/thumbnail/kittens-bg-large.png), url(..https://morisawa25.github.io/animal-gallery.site/thumbnail/kittens-bg-small.png),
     #fcecf5;
 }
 
