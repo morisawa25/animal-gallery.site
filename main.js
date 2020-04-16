@@ -1,6 +1,5 @@
 /* global $ MobileDetect */
 
-// モバイルブラウザかどうか判定
 const isMobile = !!new MobileDetect(window.navigator.userAgent).mobile();
 
 /**
@@ -9,7 +8,6 @@ const isMobile = !!new MobileDetect(window.navigator.userAgent).mobile();
  * ----------------------
  */
 const showTab = (tabName) => {
-  // すでに表示されている場合は何もせずに終了
   if ($(`#${tabName}`).is(':visible')) {
     return;
   }
@@ -217,8 +215,8 @@ const getFlickrImageURL=(photo,size)=>{
   method:'flickr.photos.search',
   api_key:apikey,
   sort:'interestingness-desc',
-  license:'4',//creative Commoms Attributionのみ
-  extras:'owner_name,license',//追加で取得する情報
+  license:'4',
+  extras:'owner_name,license',
   format:'json',
   nojsoncallback:1,
   text:'cat',
@@ -241,7 +239,7 @@ const getFlickrImageURL=(photo,size)=>{
    //空のdivを作る
    const $div=$('<div>');
    
-   //ヒット件数
+   
    $div.append(`<div>${data.photos.total}photos in total<div>`);
    
     for(let i=0; i<data.photos.photo.length;i++){
@@ -269,7 +267,7 @@ const getFlickrImageURL=(photo,size)=>{
    }
   
    
-   //$divを#mainに追加
+  
   $div.appendTo('#main');
 
  //Tooltip適用 
@@ -283,8 +281,8 @@ const getFlickrImageURL=(photo,size)=>{
   method:'flickr.photos.search',
   api_key:apikey,
   sort:'interestingness-desc',
-  license:'4',//creative Commoms Attributionのみ
-  extras:'owner_name,license',//追加で取得する情報
+  license:'4',//
+  extras:'owner_name,license',//
   format:'json',
   nojsoncallback:1,
   text:'dog',
@@ -294,7 +292,6 @@ const getFlickrImageURL=(photo,size)=>{
   const urlDog=`https://api.flickr.com/services/rest/?${parametersDog}`;
   console.log(urlDog);
 
-//画像を検索して表示
  $.getJSON(urlDog,(data)=>{
    console.log(data);
    
@@ -304,7 +301,6 @@ const getFlickrImageURL=(photo,size)=>{
      return;
    }
   
-   //空のdivを作る
    const $div=$('<div>');
    
    //ヒット件数
@@ -335,7 +331,6 @@ const getFlickrImageURL=(photo,size)=>{
    }
   
    
-   //$divを#mainに追加
   $div.appendTo('#main');
 
  //Tooltip適用 
